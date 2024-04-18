@@ -9,7 +9,7 @@ FROM layoffs;
 -- 3. Null Values or blank values
 -- 4. Remove any columns 
 
--- MAKE A COPY OF THE DATASET
+-- Creoo una copia del dataset
 CREATE TABLE layoffs_staging
 LIKE layoffs;
 
@@ -19,7 +19,6 @@ FROM layoffs_staging;
 INSERT layoffs_staging
 SELECT *
 FROM layoffs;
-
 
 
 
